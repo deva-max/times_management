@@ -78,3 +78,5 @@ password: password
 after login you may click projects in top right navigation bar and there you can start across the diffrent login diffrent nav check the features.
 
 In the route folder available pictures and sql file, csv file.
+
+run the command to npm run dev
