@@ -12,16 +12,12 @@ class ProjectController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth'); // Ensure only authenticated users can access the project controller
     }
 
-    public function index(Request $request)
+    public function index()
     {
         $timeLogs = TimeLogs::with('project')->get(); // Fetch all time logs
-
-        if($request->is('api/*')){
-            return response()->json($timeLogs);
-        }
         
         return view('timeLogs.index', compact('timeLogs')); // Change to timeLogs view
     }
