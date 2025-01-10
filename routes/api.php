@@ -12,7 +12,7 @@ Route::get('/user', function (Request $request) {
 Route::middleware('auth')->group(function (){
     
 });
-Route::get('projects/index', [ProjectController::class, 'index']);
+
 
 Route::post('register',[AuthController::class,'register']);
 Route::post('login',[AuthController::class,'login']);
