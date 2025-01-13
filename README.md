@@ -80,3 +80,5 @@ after login you may click projects in top right navigation bar and there you can
 In the route folder available pictures and sql file, csv file.
 
 run the command to npm run dev
+
+postman collection also included
